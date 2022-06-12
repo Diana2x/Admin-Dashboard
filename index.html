@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="images/Icon-Dashboard.png" />
-    <link rel="stylesheet" src="style.css" />
-    <link rel="script" src="script.js" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/6faef4fc76.js"
       crossorigin="anonymous"
@@ -23,45 +22,37 @@
     <!-- Mobile -->
     <div class="sidebar">
       <div class="logo-container">
-        <img src="images/logo.png" alt="logo" width="250px" height="100px" />
+        <img src="images/logo.png" alt="logo" class="icon-sidebar"/>
+        <p>Dashboard</p>
         <i class="fa-solid fa-xmark close-btn"></i>
       </div>
       <nav>
         <ul>
           <li>
-            <i class="fa-solid fa-house"></i>
-            <a href="#">Home</a>
+            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
           </li>
           <li>
-            <i class="fa-solid fa-id-card"></i>
-            <a href="#">Profile</a>
+            <a href="#"><i class="fa-solid fa-id-card"></i>Profile</a>
           </li>
           <li>
-            <i class="fa-solid fa-message"></i>
-            <a href="#">Messages</a>
+            <a href="#"><i class="fa-solid fa-message"></i>Messages</a>
           </li>
           <li>
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <a href="#">History</a>
+            <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>History</a>
           </li>
           <li>
-            <i class="fa-solid fa-list-check"></i>
-            <a href="#">Task</a>
+            <a href="#"><i class="fa-solid fa-list-check"></i>Task</a>
           </li>
           <li>
-            <i class="fa-solid fa-people-line"></i>
-            <a href="#">Communities</a>
+            <a href="#"><i class="fa-solid fa-people-line"></i>Communities</a>
           </li>
         </ul>
-        <div class="fill-middle"></div>
         <ul>
           <li>
-            <i class="fa-solid fa-gear"></i>
-            <a class="active" href="#">Settings</a>
+            <a class="active" href="#"><i class="fa-solid fa-gear"></i>Settings</a>
           </li>
           <li>
-            <i class="fa-solid fa-circle-info"></i>
-            <a href="#">Support</a>
+            <a href="#"><i class="fa-solid fa-circle-info"></i>Support</a>
           </li>
           <li>
             <i class="fa-solid fa-shield"></i>
@@ -76,25 +67,28 @@
         <i class="fa-solid fa-magnifying-glass"></i>
         <form action="">
           <input type="text" placeholder="Search.." name="search" />
-          <button type="submit">Go</button>
         </form>
       </div>
       <div class="profile">
         <i class="fa-solid fa-bell"></i>
-        <img src="images/user-icon.png" width="40px" />
+        <img class="icon-small"src="images/user-icon.png" />
         <p class="name">Diana Coe</a>
       </div>
-      <div class="profile- info">
-        <img src="images/user-icon.png" width="80px" />
-        <p class="small">Hi there,</p>
-        <p class="name">Diana Coe</p>
+      <div class="profile-info">
+        <img class="icon" src="images/user-icon.png" width="80px" />
+        <p class="small">Hi there,
+        </br>
+        <span class="text-Bold">Diana Cordero</span>
+        </p>
+        
       </div>
       <div class="buttons">
-        <button type="btn">New Project</button>
-        <button type="btn">Upload</button>
-        <button type="btn">Share</button>
+        <button class="btn" type="button">New Project</button>
+        <button class="btn" type="button">Upload</button>
+        <button class="btn" type="button">Share</button>
       </div>
     </header>
+    <!--Project AREA-->
     <main>
         <div class="projects">
             <h2>Your Projects</h2>
@@ -171,22 +165,22 @@
         <div class="trending">
             <h2>Trending</h2>
             <div class="trending-user">
-                <img class="user-picture" src="images/dog.png">
+                <img class="user-picture icon-small" src="images/dog.png">
                 <p class="user-name">@tegan</p>
                 <p class="user-description">World Peace Builder</p>
             </div>
             <div class="trending-user">
-                <img class="user-picture" src="images/cat.png">
+                <img class="user-picture icon-small" src="images/cat.png">
                 <p class="user-name">@Morgan</p>
                 <p class="user-description">Super Cool Project</p>
             </div>
             <div class="trending-user">
-                <img class="user-picture" src="images/superman.png">
+                <img class="user-picture icon-small" src="images/superman.png">
                 <p class="user-name">@Kendall</p>
                 <p class="user-description">Life Changing App</p>
             </div>
             <div class="trending-user">
-                <img class="user-picture" src="images/penguin.png">
+                <img class="user-picture icon-small" src="images/penguin.png">
                 <p class="user-name">@alex</p>
                 <p class="user-description">No Traffic Maker</p>
             </div>
