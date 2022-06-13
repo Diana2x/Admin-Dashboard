@@ -4,7 +4,7 @@
   --font-white: #f5f3ff; 
   --font-black: #000; 
   --card-project-border: #7c37fc;  
-  --gray-accent:  #1c1917;
+  --gray-accent:  #232323;
   --font-accent: #b1aff7;
   --background-color-decor: repeating-linear-gradient(135deg, rgba(2, 2, 2,0.08) 0px, rgba(2, 2, 2,0.08) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(45deg, rgba(2, 2, 2,0.08) 0px, rgba(2, 2, 2,0.08) 1px,transparent 1px, transparent 11px),linear-gradient(135deg, rgb(6, 6, 6),rgb(81, 81, 81));
 }
@@ -26,12 +26,12 @@ html {
 body{
     height: 100vh;
     display: grid;
-    font-size: 2rem;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: 
     ' sidebar header'
     ' sidebar content';
+    background-image: var(--background-color-decor);
 }
 /*BUTTONS*/
 .buttons button{
@@ -53,6 +53,7 @@ body{
 .btn:hover{
 text-decoration: underline;
 border: 1px solid var(--font-accent);
+color: var(--font-accent);
 }
 
 /* links*/ 
@@ -95,16 +96,14 @@ a{
   font-family: 'Lexend Deca', sans-serif, Arial, Helvetica, sans-serif;
   padding-left: 10px;
 }
-.logo-container i {
-  margin-left: 30px;
-}
 nav{
   padding: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 70vh;
+  height: 70vh;
+  font-size: 2rem;
 }
 nav ul{
   padding-top: 20px;
@@ -125,17 +124,17 @@ nav ul li, nav ul li i{
 /*HEADER AREA */
 header{
   grid-area: header;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-  'search user'
-  'user-welcome buttons';
+  display: flex;
+  justify-content: space-between;
   padding: 1em;
+  border-left: 1px solid var(--font-white);
+  color: var(--font-white);
+  font-size: 2rem;
 }
 .search-container{
   font-family: 'Lexend Deca', sans-serif, Arial, Helvetica, sans-serif;
-  grid-area: search;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1em;
 }
@@ -143,7 +142,7 @@ header{
   padding-left: 10px;
 }
 input[type="text"]{
-  width: 400px;
+  width: 80vh;
   height: 30px;
   font-size: 1em;
   padding: 10px;
@@ -157,7 +156,7 @@ input[type=text]:focus {
   grid-area: user;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 1rem;
 }
 .profile i, .profile img, .profile p{
@@ -168,34 +167,37 @@ input[type=text]:focus {
 .profile p:hover{
   cursor: pointer;
   text-decoration: underline;
+  color: var(--card-project-border);
 }
 .profile i:hover{
   cursor: pointer;
-  color: var(--card-project-border)
-}
-
-/*USER INFO */
-.profile-info{
-  grid-area: user-welcome;
-  background-color: #7c37fc;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-.profile-info p{
-  
+  color: var(--card-project-border);
 }
 
 /*BUTTONS AREA*/
 .buttons{
-  grid-area: buttons;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
-
-
 /*MAIN CONTENT DIV*/
 main{
   grid-area: content; 
+  background-color: #2a8579;
+  display: grid;
+  gap: 10px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-height: 100%;
+  padding: 2rem;
+}
+main h2{
+  font-size: 2rem;
+}
+
+.projects{
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
