@@ -1,181 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="images/Icon-Dashboard.png" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/6faef4fc76.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <!-- Adjusted with JS -->
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/Icon-Dashboard.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/6faef4fc76.js" crossorigin="anonymous"></script>
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <!-- Adjusted with JS -->
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <!-- Mobile -->
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="logo" class="icon-sidebar" />
+      <p>Dashboard</p>
     </div>
-    <!-- Mobile -->
-    <div class="sidebar">
-      <div class="logo-container">
-        <img src="images/logo.png" alt="logo" class="icon-sidebar"/>
-        <p>Dashboard</p>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-id-card"></i>Profile</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-message"></i>Messages</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>History</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-list-check"></i>Task</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-people-line"></i>Communities</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a class="active" href="#"><i class="fa-solid fa-gear"></i>Settings</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-circle-info"></i>Support</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-shield"></i>
-            <a href="#">Privacy</a>
-          </li>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-id-card"></i>Profile</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-message"></i>Messages</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-clock-rotate-left"></i>History</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-list-check"></i>Task</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-people-line"></i>Communities</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a class="active" href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-circle-info"></i>Support</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-shield"></i>
+          <a href="#">Privacy</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--SEARCHBAR AREA -->
+  <header>
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <form action="">
+        <input type="text" placeholder="Search.." name="search" />
+      </form>
     </div>
-    <!--SEARCHBAR AREA -->
-    <header>
-      <div class="search-container">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <form action="">
-          <input type="text" placeholder="Search.." name="search" />
-        </form>
+    <div class="buttons">
+      <button class="btn" type="button">New Project</button>
+      <button class="btn" type="button">Upload</button>
+      <button class="btn" type="button">Share</button>
+    </div>
+    <div class="profile">
+      <i class="fa-solid fa-bell"></i>
+      <img class="icon-small" src="images/user-icon.png" />
+      <p class="name">@Diana2x</a>
+    </div>
+  </header>
+  <!--Project AREA-->
+  <main>
+    <div class="projects">
+      <div class="section-title">
+        <h2>Your Projects</h2>
       </div>
-      <div class="buttons">
-        <button class="btn" type="button">New Project</button>
-        <button class="btn" type="button">Upload</button>
-        <button class="btn" type="button">Share</button>
+      <div class="card-container">
+        <div class="card">
+          <h3>Super Cool Project 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
+          <div class="card-icons">
+            <a href="#"><i class="fa-solid fa-star"></i></a>
+            <a href="#"><i class="fa-solid fa-eye"></i></a>
+            <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Super Cool Project 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
+          <div class="card-icons">
+            <a href="#"><i class="fa-solid fa-star"></i></a>
+            <a href="#"><i class="fa-solid fa-eye"></i></a>
+            <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Super Cool Project 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
+          <div class="card-icons">
+            <a href="#"><i class="fa-solid fa-star"></i></a>
+            <a href="#"><i class="fa-solid fa-eye"></i></a>
+            <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Super Cool Project 4</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
+          <div class="card-icons">
+            <a href="#"><i class="fa-solid fa-star"></i></a>
+            <a href="#"><i class="fa-solid fa-eye"></i></a>
+            <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Super Cool Project 5</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
+          <div class="card-icons">
+            <a href="#"><i class="fa-solid fa-star"></i></a>
+            <a href="#"><i class="fa-solid fa-eye"></i></a>
+            <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Super Cool Project 6</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
+          <div class="card-icons">
+            <a href="#"><i class="fa-solid fa-star"></i></a>
+            <a href="#"><i class="fa-solid fa-eye"></i></a>
+            <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="profile">
-        <i class="fa-solid fa-bell"></i>
-        <img class="icon-small"src="images/user-icon.png" />
-        <p class="name">@Diana2x</a>
+    </div>
+    <div class="news">
+      <div class="section-title">
+        <h2>Announcements</h2>
       </div>
-    </header>
-    <!--Project AREA-->
-    <main>
-        <div class="projects">
-            <h2>Your Projects</h2>
-            <div>
-                <h3>Super Cool Project 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
-                <div class="card-icons">
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                    <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
-                </div>
-            </div>
-            <div>
-                <h3>Super Cool Project 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
-               <div class="card-icons">
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                    <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
-                </div>
-            </div>
-            <div>
-                <h3>Super Cool Project 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
-               <div class="card-icons">
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                    <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
-                </div>
-            </div>
-            <div>
-                <h3>Super Cool Project 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
-                <div class="card-icons">
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                    <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
-                </div>
-            </div>
-            <div>
-                <h3>Super Cool Project 5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
-               <div class="card-icons">
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                    <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
-                </div>
-            </div>
-            <div>
-                <h3>Super Cool Project 6</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nemo?</p>
-               <div class="card-icons">
-                    <a href="#"><i class="fa-solid fa-star"></i></a>
-                    <a href="#"><i class="fa-solid fa-eye"></i></a>
-                    <a href="#"> <i class="fa-solid fa-share-nodes"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="news">
-            <h2>Announcements</h2>
-            <div class="announcement-feed">
-                <h4>Site Maintenance</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam maiores explicabo expedita saepe tenetur mollitia voluptatem inventore minima fugit!</p>
-            </div>
-            <div class="announcement-feed">
-                <h4>Community Share Day</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam maiores explicabo expedita saepe tenetur mollitia voluptatem inventore minima fugit!</p>
-            </div>
-            <div class="announcement-feed">
-                <h4>Updated Provacy Policy</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam maiores explicabo expedita saepe tenetur mollitia voluptatem inventore minima fugit!</p>
-            </div>
-        </div>
-        <div class="trending">
-            <h2>Trending</h2>
-            <div class="trending-user">
-                <img class="user-picture icon-small" src="images/dog.png">
-                <p class="user-name">@tegan</p>
-                <p class="user-description">World Peace Builder</p>
-            </div>
-            <div class="trending-user">
-                <img class="user-picture icon-small" src="images/cat.png">
-                <p class="user-name">@Morgan</p>
-                <p class="user-description">Super Cool Project</p>
-            </div>
-            <div class="trending-user">
-                <img class="user-picture icon-small" src="images/superman.png">
-                <p class="user-name">@Kendall</p>
-                <p class="user-description">Life Changing App</p>
-            </div>
-            <div class="trending-user">
-                <img class="user-picture icon-small" src="images/penguin.png">
-                <p class="user-name">@alex</p>
-                <p class="user-description">No Traffic Maker</p>
-            </div>
-        </div>
-    </main>
-  </body>
+      <div class="announcement-feed">
+        <h4>Site Maintenance</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam maiores explicabo expedita saepe
+          tenetur mollitia voluptatem inventore minima fugit!</p>
+      </div>
+      <div class="announcement-feed">
+        <h4>Community Share Day</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam maiores explicabo expedita saepe
+          tenetur mollitia voluptatem inventore minima fugit!</p>
+      </div>
+      <div class="announcement-feed">
+        <h4>Updated Provacy Policy</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam maiores explicabo expedita saepe
+          tenetur mollitia voluptatem inventore minima fugit!</p>
+      </div>
+    </div>
+    <div class="trending">
+      <h2>Trending</h2>
+      <div class="trending-user">
+        <img class="user-picture icon-small" src="images/dog.png">
+        <p class="user-name">@tegan</p>
+        <p class="user-description">World Peace Builder</p>
+      </div>
+      <div class="trending-user">
+        <img class="user-picture icon-small" src="images/cat.png">
+        <p class="user-name">@Morgan</p>
+        <p class="user-description">Super Cool Project</p>
+      </div>
+      <div class="trending-user">
+        <img class="user-picture icon-small" src="images/superman.png">
+        <p class="user-name">@Kendall</p>
+        <p class="user-description">Life Changing App</p>
+      </div>
+      <div class="trending-user">
+        <img class="user-picture icon-small" src="images/penguin.png">
+        <p class="user-name">@alex</p>
+        <p class="user-description">No Traffic Maker</p>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
