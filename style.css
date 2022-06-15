@@ -3,11 +3,13 @@
 :root {
   --background-color-primary: rgb(25, 25, 7);
   --font-white: #f5f3ff;
+  --background-white: #e5e5e5;
   --font-black: #000;
   --card-project-border: #7c37fc;
   --gray-accent: #232323;
   --font-accent: #b1aff7;
   --background-color-decor: repeating-linear-gradient(135deg, rgba(2, 2, 2, 0.08) 0px, rgba(2, 2, 2, 0.08) 1px, transparent 1px, transparent 11px), repeating-linear-gradient(45deg, rgba(2, 2, 2, 0.08) 0px, rgba(2, 2, 2, 0.08) 1px, transparent 1px, transparent 11px), linear-gradient(135deg, rgb(6, 6, 6), rgb(81, 81, 81));
+  --card-color: rgba(168, 168, 168, 0.3);
 }
 
 html {
@@ -64,6 +66,11 @@ body {
 /* links*/
 a {
   text-decoration: none;
+  color: #000;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 /* ICONS */
@@ -77,16 +84,9 @@ a {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1px solid var(--font-accent);
+  border: 1px solid var(--card-project-border);
+  background-color: var(--gray-accent);
 }
-
-.icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid var(--font-accent);
-}
-
 /*SIDEBAR AREA */
 .sidebar {
   grid-area: sidebar;
@@ -94,27 +94,21 @@ a {
   background-image: var(--background-color-decor);
 }
 
-.logo-container {
-  padding: .5rem;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
 
 .logo-container p {
   font-size: 3rem;
   font-family: 'Lexend Deca', sans-serif, Arial, Helvetica, sans-serif;
-  padding-left: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 nav {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-between;
   height: 70vh;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -132,7 +126,6 @@ nav ul li i {
 }
 
 .sidebar a:hover {
-  text-decoration: underline;
   color: var(--font-accent);
   font-weight: 600;
 }
@@ -163,7 +156,7 @@ header {
 input[type="text"] {
   width: 60vh;
   height: 30px;
-  font-size: 1em;
+  font-size: .8em;
   padding: 10px;
   outline: none;
   border-radius: 15px;
@@ -192,12 +185,12 @@ input[type=text]:focus {
 .profile p:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: var(--card-project-border);
+  color: var(--font-accent);
 }
 
 .profile i:hover {
   cursor: pointer;
-  color: var(--card-project-border);
+  color: var(--font-accent);
 }
 
 /*BUTTONS AREA*/
@@ -210,21 +203,21 @@ input[type=text]:focus {
 /*MAIN CONTENT DIV*/
 main {
   grid-area: content;
-  background-color: #2a8579;
+  background-color: #e5e5e5;
   display: grid;
   gap: 10px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   max-height: 100%;
   padding: 2rem;
 }
 
 main h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-
+/*PROJECTS AREA*/
 .projects {
   grid-column: 1/2;
   grid-row: 1/3;
@@ -233,21 +226,85 @@ main h2 {
 }
 
 .section-title {
-  padding-bottom: 20px;
+  padding: 15px 0 15px 0;
 }
 
 .card-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  border: 1px solid white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
 }
 
 .card {
-  background-color: #729691;
-  margin: 5px;
-  height: 50px;
-  box-sizing: border-box;
-  max-width: 50%;
-  height: 150px;
+  min-height: 150px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 10px solid var(--gray-accent);
 }
+.card-text{
+  font-size: 1.2rem;
+  height: 100px;
+  overflow: hidden;
+}
+.card-text h3{
+  font-size: 1.5rem;
+}
+
+.card-icons{
+  align-self: flex-end;
+  font-size: 1.5rem;
+}
+.card-icons a{
+  color: var(--gray-accent);
+}
+.card-icons a:hover{
+  color: var(--font-black);
+}
+
+/*NEWS AREA*/
+.news-container{
+  background-color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  
+}
+.announcement-feed{
+  padding: 10px;
+}
+.announcement-feed h4{
+  font-size: 1.4rem;
+}
+.middle{
+  border-top: 2px solid var(--gray-accent);
+  border-bottom: 2px solid var(--gray-accent);
+
+}
+
+/* TRENDING AREA*/
+.trend{
+  padding-top:10px
+}
+.trending-user{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 1.2rem;
+  gap: 10px;
+}
+.user-name{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.trending-user a:hover{
+  text-decoration: underline;
+}
+.container1{
+  background-color: var(--card-color);
+  box-shadow: 10px 10px rgba(148, 219, 179, 0.5);
+  border-radius: 5px;
+}
+
