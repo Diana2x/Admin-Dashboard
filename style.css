@@ -279,11 +279,7 @@ main h2 {
 
 }
 
-.announcement-feed {
-  padding: 10px;
-}
-
-.announcement-feed h4 {
+. .announcement-feed h4 {
   font-size: 1.2rem;
 }
 
@@ -300,8 +296,8 @@ main h2 {
 
 .trending-user {
   display: flex;
-  align-items: center;
   padding: 5px;
+  align-items: center;
   font-size: 1.2rem;
   gap: 10px;
 }
